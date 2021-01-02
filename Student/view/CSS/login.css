@@ -1,0 +1,85 @@
+         
+			body {
+				background-image: url('../resources/pp.jpg');
+				
+				}
+
+            div {			
+				width: 400px;
+				height: 500px;
+				left: 448px;
+				top: 222 px;
+				background: #0C0B0B;
+				margin:auto;
+				}
+			h1{
+			
+				width: 258px;
+				height: 50px;
+				padding:25px 20px;
+
+				font-family: Hermeneus One;	
+				font-style: normal;
+				font-weight: normal;
+				font-size: 48px;
+				line-height: 55px;	
+
+				color: #FFFAFA;
+			}
+			
+			h2{
+		
+				width: 195px;
+				height: 33px;
+				left: 510px;
+				top: 361px;
+
+				font-family: Hermeneus One;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 25px;
+				line-height: 44px;
+
+				color: #FFFFFF;
+			}
+			
+			input{
+			width: 100%;
+			margin-bottom: 20px;
+			}
+			
+			input[type="submit"]
+			{
+			border: none;
+			outline: none;
+			height: 40px;
+			background: #fb2525;
+			color: #fff;
+			font-size: 18px;
+			border-radius: 20px;
+			}
+			
+			input[type="text"], input[type="password"]
+			{
+			border: none;
+			border-bottom: 1px solid #fff;
+			background: transparent;
+			outline: none;
+			height: 40px;
+			color: #fff;
+			font-size: 16px;
+			}
+			
+			input[type="submit"]:hover
+			{
+			cursor: pointer;
+			background: #ffc107;
+			color: #000;
+			}
+			
+			a{
+			text-decoration: none;
+			font-size: 12px;
+			line-height: 20px;
+			color: darkgrey;
+			}

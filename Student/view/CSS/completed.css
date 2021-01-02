@@ -1,0 +1,15 @@
+table, td, th {  
+		border: 1px solid #ddd;
+		text-align: center;
+		}
+
+		table {	
+		border-collapse: collapse;
+		width: 100%;
+		}
+
+		th, td,h1 {
+		padding: 15px;
+		}
+		body {
+		background-color: rgba(201, 152, 192, 0.3);}

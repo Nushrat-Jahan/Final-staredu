@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<users>
+  <user>
+    <fullname>Nushrat</fullname>
+    <username>Nushrat_Jahan</username>
+    <password>11111111</password>
+    <email>nushratjahan296@gmail.com</email>
+    <gender>Female</gender>
+    <country>Bangladesh</country>
+    <profession>Student</profession>
+    <type>user</type>
+  </user>
+  <user>
+    <fullname>John</fullname>
+    <username>Nushrat_Jahan</username>
+    <password>22222222</password>
+    <email>18-36585-1@student.aiub.edu</email>
+    <gender>Female</gender>
+    <country>Chaina</country>
+    <profession>Student</profession>
+    <type>user</type>
+  </user>
+</users>

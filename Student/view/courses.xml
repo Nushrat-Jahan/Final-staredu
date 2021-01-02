@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<courses>
+  <course>
+    <courseid>101</courseid>
+    <coursename>Web Technologies</coursename>
+  </course>
+  <course>
+    <courseid>102</courseid>
+    <coursename>Research Methodology</coursename>
+  </course>
+  <course>
+    <courseid>103</courseid>
+    <coursename>Python</coursename>
+  </course>
+  <course>
+    <courseid>104</courseid>
+    <coursename>Engineering Management</coursename>
+  </course>
+  <course>
+    <courseid>105</courseid>
+    <coursename>Artificial Intelligence</coursename>
+  </course>
+  <course>
+    <courseid>106</courseid>
+    <coursename>Computer Graphics</coursename>
+  </course>
+  <course>
+    <courseid>107</courseid>
+    <coursename>Software Engineering</coursename>
+  </course>
+  <course>
+    <courseid>108</courseid>
+    <coursename>Discreate Mathematics</coursename>
+  </course>
+</courses>
