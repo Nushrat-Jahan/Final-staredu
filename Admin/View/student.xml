@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<students>
+	<student>
+		<uniqueid>001</uniqueid>
+		<name>Student 01</name>
+		<coursecomp>2</coursecomp>
+		<valid>Yes</valid>
+	</student>
+	<student>
+		<uniqueid>002</uniqueid>
+		<name>Student 02</name>
+		<coursecomp>5</coursecomp>
+		<valid>Yes</valid>
+	</student>
+	<student>
+		<uniqueid>003</uniqueid>
+		<name>Student 03</name>
+		<coursecomp>3</coursecomp>
+		<valid>No</valid>
+	</student>
+</students>

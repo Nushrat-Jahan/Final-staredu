@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<teachers>
+	<teacher>
+		<uniqueid>001</uniqueid>
+		<name>Teacher 1</name>
+		<course>Physics</course>
+		<university>Dhaka University</university>
+	</teacher>
+	<teacher>
+		<uniqueid>002</uniqueid>
+		<name>Teacher 2</name>
+		<course>Chemistry</course>
+		<university>Rajshahi University</university>
+	</teacher>
+	<teacher>
+		<uniqueid>003</uniqueid>
+		<name>Teacher 3</name>
+		<course>Mathematics</course>
+		<university>North South University</university>
+	</teacher>
+</teachers>

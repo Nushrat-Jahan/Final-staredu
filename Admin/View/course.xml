@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<courses>
+	<course>
+		<uniqueid>001</uniqueid>
+		<name>Physics</name>
+		<numteach>3</numteach>
+		<valid>Yes</valid>
+	</course>
+	<course>
+		<uniqueid>002</uniqueid>
+		<name>Software Engineering</name>
+		<numteach>1</numteach>
+		<valid>Yes</valid>
+	</course>
+	<course>
+		<uniqueid>003</uniqueid>
+		<name>Accounting</name>
+		<numteach>0</numteach>
+		<valid>No</valid>
+	</course>
+</courses>
