@@ -20,8 +20,8 @@
 		if(!$hasError && isset($_POST["login"])){
 			
 			if(authenticate($_POST["uname"],$_POST["pass"])){
-				setcookie("username", $_POST["uname"], time() + 600);
-				header('Location: studenthome.php?u='.$_POST["uname"]);
+				setcookie("username", $_POST["uname"], time() + 3600);
+				header('Location: stuinihome.php?u='.$_POST["uname"]);
 			}
 			else{
 				echo "Username password invalid";
@@ -39,6 +39,12 @@
 
 	function getStudent($username){
 		$query = "SELECT * FROM student WHERE username='$username'";
+		$result = get($query);
+		return $result;
+	}
+
+	function getStudentById($id){
+		$query = "SELECT * FROM student WHERE id='$id'";
 		$result = get($query);
 		return $result;
 	}

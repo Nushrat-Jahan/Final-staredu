@@ -14,12 +14,9 @@
 			<p class="title">Gender : <?php echo $student["gender"];?></p>
 			<p class="title">Profession : <?php echo $student["profession"];?></p>
 			<p><?php echo "<a href='studenthome.php?id=".$student["id"]."' class='button'>Go back</a>";?></p>
-			<?php echo "<a href='editprofile.php?id=".$student["id"]."' class='button'>Edit Profile</a>";?>
+			<?php echo "<a href='editprofile.php?id=".$student["id"]."' class='button'>Change</a>";?>
 			</div>
 			
 </form>
-			
-		
-	
 </body>
 </html>

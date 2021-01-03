@@ -9,10 +9,10 @@
 		<div class="bg-text">
 		<form action="" method="post">
 			<?php include_once "../controller/valid_login.php"; 
-			    $id = $_GET['id'];
-				$std = getStudentById($id);
-				if(count($std)>0){
-					foreach($std as $user){
+				$un = $_GET['u'];
+				$student = getStudent($un);
+				if(count($student)>0){
+					foreach($student as $user){
 						echo "<h1>Welcome ".$user["username"]."</h1>";
 						echo "<a href='studenthome.php?id=".$user["id"]."' class='button'>Home</a>";
 						echo "<a href='studentprofile.php?id=".$user["id"]."' class='button'>Profile</a>";

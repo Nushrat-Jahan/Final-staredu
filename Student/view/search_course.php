@@ -42,7 +42,7 @@
 					echo "<tr>";
 						echo "<td>".$b["course_id"]."</td>";
 						echo "<td>".$b["course_name"]."</td>";
-						echo "<td><a href='addtoenroll.php?cname='".$b["course_name"]."'><button class='button1'>Enroll Now</button></a></td>";
+						echo "<td><a href='addtoenroll.php?cname=".$b["course_name"]."' class='button1'>Enroll Now</a></td>";
 					echo "</tr>";
 					}
 	    }
@@ -53,7 +53,7 @@
 					echo "<tr>";
 						echo "<td>".$b["course_id"]."</td>";
 						echo "<td>".$b["course_name"]."</td>";
-						echo "<td><a href='addtoenroll.php?cname='".$b["course_name"]."'><button class='button1'>Enroll Now</button></a></td>";
+						echo "<td><a href='addtoenroll.php?cname=".$b["course_name"]."' class='button1'>Enroll Now</a></td>";
 					echo "</tr>";
 					
 				}
