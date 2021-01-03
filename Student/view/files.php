@@ -14,7 +14,6 @@
 			echo "<a href='studenthome.php?id=".$student["id"]."' class='button'>Home</a>";
 			echo "<a href='downloadfile.php?id=".$student["id"]."' class='button'>Download file</a>";
 			echo "<a href='assignment.php?id=".$student["id"]."' class='button'>Assignment</a>";
-			echo "<a href='certificate.php?id=".$student["id"]."' class='button'>Certificate</a>";
 			?>
 		</form>
 		</div>
