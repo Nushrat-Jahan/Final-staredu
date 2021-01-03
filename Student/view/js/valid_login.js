@@ -3,7 +3,6 @@ function getElement(id){
 }
 
 function validate(){
-	refresh();
 	var hasErr = false;
 	var e_uname = getElement("uname");
 	var e_pass  = getElement("pass");
@@ -15,16 +14,24 @@ function validate(){
 	if(e_uname.value == ""){
 		hasErr= true;
 		err_uname.innerHTML = "Username Required";
+		err_uname.style.color = "blue";
 		e_uname.focus();
 		return !hasErr;
+	}
+	else {
+			err_uname.innerHTML = "";
 	}
 
 	//Password
 	if(e_pass.value == ""){
 		hasErr= true;
 		err_pass.innerHTML = "Password Required";
+		err_pass.style.color = "blue";
 		e_pass.focus();
 		return !hasErr;
+	}
+	else {
+			err_pass.innerHTML = "";
 	}
 	
 	return !hasErr;

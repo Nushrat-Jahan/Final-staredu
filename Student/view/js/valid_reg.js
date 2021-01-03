@@ -3,7 +3,6 @@ function getElement(id){
 }
 
 function validate(){
-	refresh();
 	var hasErr = false;
 	var e_fname = getElement("fname");
 	var e_uname = getElement("uname");
@@ -20,42 +19,61 @@ function validate(){
 	//Full Name
 	if(e_fname.value == ""){
 		hasErr= true;
-		err_fname.innerHTML = "Full Required";
+		err_fname.innerHTML = "Full name Required";
+		err_fname.style.color = "blue";
 		e_fname.focus();
 		return !hasErr;
 	}
-
+	else {
+			err_fname.innerHTML = "";
+	}
 	
 	//Username
 	if(e_uname.value == ""){
 		hasErr= true;
 		err_uname.innerHTML = "Username Required";
+		err_uname.style.color = "blue";
 		e_uname.focus();
 		return !hasErr;
+	}
+	else {
+			err_uname.innerHTML = "";
 	}
 
 	//Password
 	if(e_pass.value == ""){
 		hasErr= true;
 		err_pass.innerHTML = "Password Required";
+		err_pass.style.color = "blue";
 		e_pass.focus();
 		return !hasErr;
+	}
+	else {
+			err_pass.innerHTML = "";
 	}
 	
 	//Confirm Password
 	if(e_cpass.value == ""){
 		hasErr= true;
 		err_cpass.innerHTML = "Confirm your Password";
+		err_cpass.style.color = "blue";
 		e_cpass.focus();
 		return !hasErr;
+	}
+	else {
+			err_cpass.innerHTML = "";
 	}
 	
 	//Email
 	if(e_email.value == ""){
 		hasErr= true;
 		err_email.innerHTML = "Please give your email";
+		err_email.style.color = "blue";
 		e_email.focus();
 		return !hasErr;
+	}
+	else {
+			err_email.innerHTML = "";
 	}
 
 	return !hasErr;

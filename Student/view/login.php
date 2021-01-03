@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		
-			<form action="" method="post">
+			<form action="" method="post"  onsubmit="return validate()">
 			<div align="center">
 				<h1 align="center">Get Started</h1>
 				<table>

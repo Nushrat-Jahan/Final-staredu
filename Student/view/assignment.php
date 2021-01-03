@@ -4,7 +4,7 @@
 	if(isset($_POST["change"])){
 		
 		$fileType = strtolower(pathinfo(basename($_FILES["upfile"]["name"]),PATHINFO_EXTENSION));
-		$target_file = "storage/upfile/" .$id.".$fileType.";
+		$target_file = "storage/upfile/" .$id.".$fileType";
 		move_uploaded_file($_FILES["upfile"]["tmp_name"],$target_file);
 		$query = "insert into assignment values('".$id."','".$target_file."')";
 		$user = execute($query);

@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<div align="center">
-		<form action="" method="post" style="width: 700px;" align="center">
+		<form action="" method="post" style="width: 700px;" align="center" onsubmit="return validate()">
 			<fieldset style="background-color: lightgray;" >
 				<table align="center">
 					<h1 align="center">Welcome to Registration</h1>
@@ -17,7 +17,7 @@
 					</tr>
 					<tr>
 						<td>Username:</td>
-						<td><input type="text" id="uname" onfocusout="check_username(this)" value="<?php echo $uname?>" name="uname"><span id="err_uname"></span></td>
+						<td><input type="text" id="uname" onkeyup="check_username(this)" value="<?php echo $uname?>" name="uname"><span id="err_uname"></span></td>
 						<td><span style="color:red;" id = "err_username">*<?php echo $err_uname;?></span></td>
 					</tr>
 					<tr>
@@ -135,14 +135,15 @@
 		</div>
 		<script src="js/valid_reg.js"></script>
 		<script>
-			function checkUser(username){
-				var xhr = new XMLHttpRequest;
+			function check_username(username){
+				debugger;
+				var xhr = new XMLHttpRequest();
 				xhr.onreadystatechange=function(){
 					if(this.readyState == 4 && this.status == 200){
-						document.getElementById("err_username").innerHTML = this.resposeText;
+						document.getElementById("err_username").innerHTML = this.responseText;
 					}
 				};
-				xhr.open("GET","check_username.php?u"+username.value,true);
+				xhr.open("GET","check_username.php?u="+username.value,true);
 				xhr.send();
 			}
 		</script>

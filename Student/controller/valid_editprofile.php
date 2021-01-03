@@ -1,5 +1,6 @@
 <?php
 
+	session_start();
 	include_once "../model/db_connection.php";
 	$id = $_GET["id"];
 	$query = "SELECT * FROM student WHERE id=$id";
@@ -40,11 +41,12 @@
 		$query = "update student set fullname='$fname', username='$uname', email='$email', gender='$gender' where id=$id";
 		execute($query);
 		//echo "User state changed";
-		header ("Location: studentprofile.php?id=".$student["id"]."");
+		$_SESSION["student_id"] = $student["id"];
+		header ("Location: studentprofile.php");
 	}
 	
 	if(isset($_POST["go_back"]))
 	{
-		header ("Location: studentprofile.php?id=".$student["id"]."");
+		header ("Location: studentprofile.php");
 	}
 ?>

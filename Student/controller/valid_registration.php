@@ -23,7 +23,7 @@
 	$err_profession="";
 	$hasError=false;
 	if(isset($_POST["register"])){
-		
+
 		//Full name
 		if(empty($_POST["fname"])){
 			$err_fname="Full name Required";
