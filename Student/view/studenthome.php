@@ -8,8 +8,10 @@
 		<div class="bg-image"></div>
 		<div class="bg-text">
 		<form action="" method="post">
-			<?php include_once "../controller/valid_login.php"; 
-			    $id = $_GET['id'];
+			<?php 
+                session_start();
+			    include_once "../controller/valid_login.php"; 
+			    $id = $_SESSION["student_id"];
 				$std = getStudentById($id);
 				if(count($std)>0){
 					foreach($std as $user){
