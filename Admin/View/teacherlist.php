@@ -1,4 +1,10 @@
-<?php require_once "../Model/dbconnect.php";?>
+<?php 
+
+session_start();
+
+require_once "../Model/dbconnect.php";
+
+?>
 
 <html>
 	
@@ -43,6 +49,7 @@
 					<td><h2>Unique ID</h2></td>
 					<td><h2>Name</h2></td>
 					<td><h2>Email</h2></td>
+					<td><h2>Action</h2></td>
 				</tr>
 				<tr>
 					<?php
@@ -53,11 +60,13 @@
 									echo "<td>".$teacher["t_id"]."</td>";
 									echo "<td>".$teacher["t_name"]."</td>";
 									echo "<td>".$teacher["t_mail"]."</td>";
+									echo "<td><a href='../Controller/teachercont.php?id=".$teacher["t_id"]."' class='button' style = 'background-color:gray;height:40px;width:177px'>Delete</a></td>";
 								echo "</tr>";
 							}
 						}
 						else{
 							echo "<tr>";
+								echo "<td>No Data Found</td>";
 								echo "<td>No Data Found</td>";
 								echo "<td>No Data Found</td>";
 								echo "<td>No Data Found</td>";
