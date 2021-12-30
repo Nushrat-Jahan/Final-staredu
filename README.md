@@ -46,7 +46,3 @@
   <li>View enrolled courses</li>
   <li>View completed courses</li>
 </ul>
-
-## Project Folder Structure
-<p>Folder structure of our project</p>
-<img src=".PNG">
